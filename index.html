@@ -2,26 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-   <!-- tailwind and duiisy ui  -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind and duiisy ui  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="">
-    <header>
-<nav>
-    <div class="navbar bg-base-100">
+  <header>
+    <nav>
+      <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Home</a></li>
@@ -42,23 +46,111 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-           
-            
-            <div class="navbar-end flex items-center gap-2">
-                <img class="w-7" src="./Images/search.png" alt="">
+
+
+        <div class="navbar-end flex items-center gap-2">
+          <img class="w-7" src="./Images/search.png" alt="">
           <a class="btn bg-[#FF4240]">Get Ticket</a>
         </div>
-    
-       
+
+
       </div>
-</nav>
-    </header>
-    <main>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
+  <!-- banner part started let go -->
+  <section>
+    <div class="carousel my-10">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./Images/1.png" class="w-full bg-cover " />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./Images/2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./Images/3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="./Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <!-- Professional Hockeys Club -->
+    <div class="flex justify-center items-center">
+      <div>
+        <h2>Professional Hockeys Club</h2>
+      </div>
+      <div>
+        <p>National Hockey League (NHL): The premier professional ice hockey league in North America, featuring teams
+          from the United States and Canada</p>
+      </div>
+      <div></div>
+    </div>
+  </main>
+  <footer class="footer p-10 bg-[#131318;] text-gray-300 mt-10 ">
+    <div>
+      <h2 class="text-2xl font-bold">Get In Touch</h2>
+      <p>
+        Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam
+        proin.
+      </p>
+      <div class="flex items-center gap-2">
+        <img src="./icons/Website.png" alt="">
+        <p>hockeys@support.com</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./icons/Call.png" alt="">
+        <p>(+62) 123-321-543</p>
+      </div>
+    </div>
+    <div class="flex md:gap-40 gap-20">
+      <nav>
+        <header class="footer-title">Company</header>
+        <p class="link link-hover">About Us</p>
+        <p class="link link-hover">Leadership</p>
+        <p class="link link-hover">Career</p>
+        <p class="link link-hover">News & Article</p>
+        <p class="link link-hover">Legal Notice</p>
+        
+      </nav>
+      <nav>
+        <header class="footer-title">Support</header>
+        <p class="link link-hover">Help Center</p>
+        <p class="link link-hover">FAQ</p>
+        <p class="link link-hover">Ticket Support</p>
+        <p class="link link-hover">Contact Us</p>
+       
+      </nav>
+    </div>
+    <div class="sm:w-full mx-auto ">
+      <nav>
+        <header class="footer-title">Services</header>
 
-    </footer>
+        <p class="link link-hover">Academy</p>
+        <p class="link link-hover">Group Lesson</p>
+        <p class="link link-hover">Private Lessen</p>
+        <p class="link link-hover">Hockeys for kids</p>
+        <p class="link link-hover">Hockeys for Adult</p>
+      </nav>
+    </div>
+  </footer>
 </body>
 
 </html>
